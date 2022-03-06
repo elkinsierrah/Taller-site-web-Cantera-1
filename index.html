@@ -4,60 +4,212 @@
     <title>Hoja de Vida</title>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descripción de Hoja de Vida Taller de Html cantera 1">       
-  </head>  
-  <body body bgcolor="#6F6F6F">    
-      <header align="center">
-          <font size="8px"><b>HOJA DE VIDA<b></font><br>    
-          <font size="6px"><b>Información Personal</b></font>
-      </header>    
-      <section>      
-          <article>
-              <table width="90%" align="center">
-                  <tr align="center">
-                        <td width="35%" bgcolor="#333333"  boder="3" bordercolor="#333333" colspan="2"><h1><font color="#fff" size="6px">ELKIN SIERRA</h1></td>
-                        <td width="20%" rowspan="4" bgcolor="#333333"><img width="100%" src="imagenes/imgElkin.jpg"></td>
-                        <td bgcolor="#0087A0" colspan="2"><h2>Ingeniero en Sistemas</h2></td>
-                  </tr>
-                        <tr align="center">
-                        <td bgcolor="#333333" colspan="2"><h1><font color="#fff" size="6px">HERNÁNDEZ</font> </h2></td>
-                        <td bgcolor="#0087A0" colspan="2"><h2>Técnico Superior Universitario Informática</h1></td>
-                  </tr>
-                  <tr align="center">
-                        <td bgcolor="#333333" colspan="2"><font color="#fff" size="5px">Fecha de Nacimiento: 04/11/1974</td>
-                        <td bgcolor="#0087A0" colspan="2"><h2>Desarrollador App Web</h1></td></tr>
-                  <tr align="center">
-                          <td bgcolor="#333333" colspan="2"><font color="#fff" size="5px">Lugar: Santa Marta, Magdalena</font></td>
-                          <td bgcolor="#0087A0" colspan="2"><h3>CONTACTO</h3>
-                                            Teléfono: +573044595870<br>
-                                            Dierección Cl 31 Cr77-28 (Int 202) Belén Parque<br>
-                                            Email: elkin.sierra.h@gmail.com
-                          </td>
-                  </tr>
-                  <tr>
-                          <td bgcolor="#fff" align="center"><font><a href=index.html>Información Personales</a></font></td>
-                          <td bgcolor="#fff" align="center"><font><a href=experiencia.html>Experiencia Laboral</a></font></td>
-                          <td bgcolor="#fff" align="center"><font><a href=referencias.html>Referencias Personales</a></font></td>
-                          <td bgcolor="#fff" align="center"><font><a href=referfamiliares.html>Referencias Familiares</a></font></td>
-                          <td bgcolor="#fff" align="center"><font><a href=estudios.html>Estudios realizados</a></font></td>
+    <meta name="description" content="Descripción de Hoja de Vida Taller de Html cantera 1">   
+<style type="text/css">
 
-                   </tr>
-                    <tr>
-                          <td bgcolor="#fff" align="center" colspan="5"><a href="descargas/HV ELKIN SIERRA.pdf" download="HV ELKIN SIERRA.pdf">Descargar Hoja de Vida</a></td> 
-                    </tr>    
-              </table>
-          </article>    
-      </section><br><br>  
-       <footer style="background-color: #fff;">
+body{
+  font-family:helvetica, verdana; 
+  background-color: #6F6F6F;
+}
+
+a{
+  color:#fff;
+  font-weight:bold;
+  text-decoration:none;
+
+}
+
+#contenedor{
+  margin:0px 30px 30px 30px;
+  color:#000000;
+ 
+  height: 350px;
+  
+}
+
+#caja1 {
+  margin:2px 5px 2px 5px;
+  color:#fff;
+  border:1px solid #000000;
+  width: 500px;
+  height:265px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #333333;
+  float: left ;
+  border-radius: 15px;
+  box-shadow: 8px 10px 10px black;
+}
+#caja2 {
+  margin:2px 4px 2px 4px;
+  border:1px solid #fffff;
+  width: 240px;
+  height: 270px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #333333;
+  float:left ;
+  border-radius: 10px;
+  box-shadow: 8px 10px 10px black;
+}
+#caja3 {
+  margin:2px 5px 2px 5px;
+  color:#000000;
+  border:1px solid #000000;
+  width: 500px;
+  height:265px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #0087A0;
+  float: left ;
+  border-radius: 15px;
+  box-shadow: 8px 10px 10px black;
+}
+
+#titulo{
+  font-size:35px;
+  font-weight:bold; 
+  text-align:center;
+  text-shadow:2px 2px #CCCCCC;
+  box-shadow: 2px 8px 5px black;
+  margin-bottom:20px;
+  margin-top:10px;
+  padding:0px;
+}
+img#foto{
+  float:left;
+  padding:2px;
+}
+p{
+  text-align:justify; 
+  font-size:14px;   
+  text-indent:40px;
+}
+font {
+
+  text-shadow: 1px 1px 8px;
+}
+.caja_links{
+  margin:10px 30px 10px 30px;
+  color:#000000;
+  width: 450;
+  height: 60px;
+  
+
+  }
+
+.links{
+  margin:5px 40px 5px 40px;
+  font-size:15px;
+  padding:0px;
+  float:left ;
+}   
+
+.boton {
+  margin:5px 19px 5px 19px;
+  background-color: #333333;
+  color: #fff;
+  height: 40px;
+  width: 200px;
+  float:left ;
+  border-radius: 15px;
+  border-color: black ;
+  box-shadow: 6px 10px 10px black;
+  font-size: 10;
+ text-align:center;
+}
+
+.boton:hover {
+   box-shadow: 7px 9px 15px black inset;
+   background-color: #0087A0;
+}
+
+
+.boton2 {
+  margin:5px 500px 5px 500px;
+  background-color: #0087A0;
+  color: #fff;
+  height: 40px;
+  width: 200px;
+  float:left ;
+  border-radius: 15px;
+  box-shadow: 6px 10px 10px black;
+
+}
+.boton2:hover {
+   box-shadow: 7px 9px 15px black inset;
+   background-color: #333333;
+}
+footer{
+background-color:#333333;
+box-shadow: 6px 10px 10px black;
+
+}
+h1{
+  color: #fff;
+}
+h4{
+  color: #fff;
+}
+</style>    
+  </head>  
+  <body>  
+      <header align="center">
+        <font size="8px"><b>HOJA DE VIDA<b></font><br>   
+      </header> 
+
+ <section id="contenedor">
+    <section id="titulo">INFORMACIÓN PERSONAL</section>
+      <aside id="caja1">
+        <font size="6px"><br>
+          <b>ELKIN SIERRA<br><BR>
+             HERNANDEZ<br><br>
+         </font>  
+          <font size="5px">
+             Fecha de Nacimiento: 04/11/1974<br>
+             Lugar: Santa Marta, Magdalena.</b>
+          </font>  
+     </aside>
+      <aside id="caja2"><img src="imagenes/imgElkin.jpg" id="foto" alt="foto" width="235px"></aside>
+      <aside id="caja3"><font size="6px"><br>
+          <b>INGENIERO DE SISTEMAS<br><br>
+             </font>  
+          <font size="5px">
+             Técnico Superior Universitario Informática<br><br>
+             Desarrollador App Web<br><br>
+             
+          </font>  </aside>
+   </section>
+     <section class="caja_links">
+          <nav class="links">
+               <button class="boton"><a href="index.html">Información Personales</a></button>
+               <button class="boton"><a href="experiencia.html">Experiencia Laboral</a></button>
+               <button class="boton"><a href="referencias.html">Referencias Personales</a></button>
+               <button class="boton"><a href="referfamiliares.html">Referencias Familiares</a></button>
+               <button class="boton"><a href="estudios.html">Estudios realizados</a></button>
+          </nav>
+      </section>
+  <section class="caja_links">
+      <nav class="links">
+        <button class="boton2"><a href="descargas/HV ELKIN SIERRA.pdf" download="HV ELKIN SIERRA.pdf">Descargar Hoja de Vida</a></button>
+      </nav>
+  </section>
+          
+        
+       <footer>
         <table width="90%" align="center">
-          <tr><td colspan="3" align="center"><h4 align="center">Redes sociales</h4><br>Copyrigth© 2022 Todos los Derechos Reservados</td></tr>
+          <tr><td colspan="3" align="center"><h1>Redes sociales</h1>
+            <h4>Copyrigth© 2022 Todos los Derechos Reservados</h4></td></td></tr>
           <tr >
             <td><h4 align="center"><a href="https://www.linkedin.com/in/elkin-sierra-hernandezdez-2192101b5/">
               <img src="imagenes\linkedin.jpg" width="60px"><br> Linkedin</a></h4></td>
             <td><h4 align="center"><a href="http://facebook.com">
-              <img src="imagenes\facebook.jpg" width="60px"><br> Facebook</a></h4></td>
+              <img src="imagenes\facebook.jpg" width="60px"><br>Facebook</a></h4></td>
             <td><h4 align="center"><a href="http://instagram.com">
-              <img src="imagenes\instagram.jpg" width="60px"><br> Instagram</a></h4></td>
+              <img src="imagenes\instagram.jpg" width="60px"><br>Instagram </a></h4></td>
           </tr>
             </table>
       </footer>
