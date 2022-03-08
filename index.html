@@ -26,12 +26,21 @@ a{
   height: 350px;
   
 }
+#container{
+
+  margin:30px 30px 30px 30px;
+  color:#000000;
+  height: 80px;
+  width: 740px;
+  
+  
+}
 
 #caja1 {
   margin:2px 5px 2px 5px;
   color:#fff;
   border:1px solid #000000;
-  width: 500px;
+  width: 39%;
   height:265px;
   text-align: center;
   background-repeat: no-repeat;
@@ -58,7 +67,7 @@ a{
   margin:2px 5px 2px 5px;
   color:#000000;
   border:1px solid #000000;
-  width: 500px;
+  width: 39%;
   height:265px;
   text-align: center;
   background-repeat: no-repeat;
@@ -95,7 +104,7 @@ font {
 .caja_links{
   margin:10px 30px 10px 30px;
   color:#000000;
-  width: 450;
+  width: 90%;
   height: 60px;
   
 
@@ -113,9 +122,9 @@ font {
   background-color: #333333;
   color: #fff;
   height: 40px;
-  width: 200px;
+  width: 15%;
   float:left ;
-  border-radius: 15px;
+  border-radius: 17px;
   border-color: black ;
   box-shadow: 6px 10px 10px black;
   font-size: 10;
@@ -154,14 +163,39 @@ h1{
 h4{
   color: #fff;
 }
-</style>    
+select {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  font-family: inherit;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 0.25rem;
+}
+</style>   
+<script type="text/javascript">
+  function cambioTema(x){
+    console.log(x.value);
+    var body = document.getElementById("body");
+    document.body.style.backgroundColor = x.value;
+}
+
+</script>
   </head>  
-  <body>  
+  <body id="body">  
       <header align="center">
         <font size="8px"><b>HOJA DE VIDA<b></font><br>   
       </header> 
-
+      <section id="container">
+      <h3>Seleccione cambio de color de fondo</h3>
+      <select name="fondo" id="fondo" onchange="cambioTema(this)">
+         <option value="#6F6F6F">Original</option>
+         <option value="#2d8ff8">Azul</option>
+         <option value="#fd93fd">Lila</option>
+         <option value="#aaf8d8">Verde</option>
+       </select>
+      </section>
  <section id="contenedor">
+  
     <section id="titulo">INFORMACIÓN PERSONAL</section>
       <aside id="caja1">
         <font size="6px"><br>
@@ -184,7 +218,7 @@ h4{
           </font>  </aside>
    </section>
      <section class="caja_links">
-          <nav class="links">
+          
                <button class="boton"><a href="index.html">Información Personales</a></button>
                <button class="boton"><a href="experiencia.html">Experiencia Laboral</a></button>
                <button class="boton"><a href="referencias.html">Referencias Personales</a></button>
@@ -195,10 +229,11 @@ h4{
   <section class="caja_links">
       <nav class="links">
         <button class="boton2"><a href="descargas/HV ELKIN SIERRA.pdf" download="HV ELKIN SIERRA.pdf">Descargar Hoja de Vida</a></button>
-      </nav>
-  </section>
-          
-        
+      </nav></section>
+    
+
+
+
        <footer>
         <table width="90%" align="center">
           <tr><td colspan="3" align="center"><h1>Redes sociales</h1>

@@ -67,7 +67,7 @@ a{
   margin:2px 5px 2px 5px;
   color:#000000;
   border:1px solid #000000;
-  width:620px;
+  width:99%;
   height:250px;
   text-align: center;
   background-repeat: no-repeat;
@@ -76,20 +76,10 @@ a{
   float: left ;
   border-radius: 15px;
   box-shadow: 8px 10px 10px black;
+ 
 }
 
-#subtitulo{
-  font-size:30px;
-  font-weight:bold; 
-  text-align:center;
-  text-shadow:2px 2px #000;
-  color: #fff;
-  box-shadow: 2px 8px 5px black;
-  margin-bottom:20px;
-  margin-top:10px;
-  padding:0px;
-  background-color:#333333;
-}
+
 
 #subtitulo2{
   font-size:30px;
@@ -102,6 +92,7 @@ a{
   margin-top:10px;
   padding:0px;
   background-color:#0087A0;
+  
 }
 
 img#foto{
@@ -113,15 +104,13 @@ p{
   font-size:16px;   
   text-indent:40px;
 }
-font {
 
-  text-shadow: 1px 1px 8px;
-}
 .caja_links{
   margin:10px 30px 10px 30px;
   color:#000000;
-  width: 450;
+  width: 95%;
   height: 60px;
+ 
   
 
   }
@@ -134,7 +123,7 @@ font {
 }   
 
 .boton {
-  margin:5px 19px 5px 19px;
+  margin:5px 12px 5px 12px;
   background-color: #333333;
   color: #fff;
   height: 40px;
@@ -184,130 +173,159 @@ li {
   line-height: 1.0;
   text-align: left;
   
-
-
 }
 footer{
  height: 300px; 
 background-color:#333333;
 
 }
+#subtitulo{
+  font-size:30px;
+  font-weight:bold; 
+  text-align:center;
+  text-shadow:2px 2px #000;
+  color: #fff;
+  margin-bottom:20px;
+  margin-top:10px;
+  padding:0px;
+  background-color:#333333;
+  max-width: 95%;
+  border-radius: 15px;
+  box-shadow: 8px 10px 10px black;
+}
+button{
+  font-size:30px;
+  font-weight:bold; 
+  text-align:center;
+  text-shadow:2px 2px #000;
+  color: #fff;
+  margin-bottom:0px;
+  margin-top:10px;
+  padding:0px;
+  background-color:#333333;
+  border-radius: 10px;
+  box-shadow: 2px 8px 5px black;
+  width: 95%;
+  height: 50px;
+
+}
+
 </style>          
   </head>  
   <body>    
       <header align="center">
           <font size="8px"><b>HOJA DE VIDA<b></font><br>    
             
-      </header>    
+      </header> 
+      
+        
       <section id="contenedor">
-    <section id="titulo">Experiencia Laboral y Habilidades</section>
-      <aside id="caja1">
-        <section id="subtitulo">CallCenterMall (Coordinador TI)</section>
-                  <p align="center">20/10/2020 ACTUALMENTE (MEDELLIN ANTIOQUIA)</p>
+        
+   <section id="titulo" >Experiencia Laboral y Habilidades</section>  
+        Haga doble click en los titulos para ocultar o desplegar
+        <button class="accordion">CallCenterMall (Coordinador TI)</button>
+        <section id="subtitulo">
+                  <font size="4px">20/10/2020 ACTUALMENTE (MEDELLIN ANTIOQUIA)</font>
+        
+                
                 <p align="justify" style="margin-right: 30px; padding: 30px;">
                      Coordinar y realizar soporte a equipos, reparar e instalar
                      sistemas necesarios para que los Asesores realicen sus labores,
                      realizar mantenimientos de computadores y software,
                      inventarios, ciberseguridad, redes, análisis de Fallas, Soporte y
-                     atención a usuarios, implementar nuevas tecnologías.</p>
-      </aside>
+                     atención a usuarios, implementar nuevas tecnologías.</p></section>
+    
       
-      <aside id="caja3">
-           <section id="subtitulo2">Habilidades Adquiridas</section>
-           <ul>
-            <li>Administración de Servidores</li>
-            <li>Redes y Cableado</li>
-            <li>Soporte Técnico</li>
-            <li>Php (App web)</li>
-            <li>Redes</li>
-            <li>Mysql (base de datos)</li>
-          </ul>
-            </aside>
+      
+        <button class="accordion">Luz Digital (Programador web)</button>
+        <section id="subtitulo">
+          <font size="4px"> 03/02/2020 – 18/09/2020 (MEDELLIN ANTIOQUIA)</font>
 
-      <aside id="caja1">
-        <section id="subtitulo">Luz Digital (Programador web)</section>
         <p align="center">03/02/2020 – 18/09/2020 (MEDELLIN ANTIOQUIA)</p>
                 <p align="justify" style="margin-right: 30px; padding: 30px;">
                      Desarrollar website con el manejador de contendido WordPress
                      según las indicaciones de los clientes, así como tambien editar y
                      actualizar los sitios web ya realizdos creando módulos con php,
-                     javascript y moldeandolos con Html y Cs</p>
-      </aside>
-      
-      <aside id="caja3">
-          <ul>
-            <li>JavaScript</li>
-            <li>Html y Css</li>
-            <li>WordPress</li>
-            <li>React Native (Aprendíz)</li>
-            <li>Python</li>
-            <li>Nodejs (páginas web)</li>
-            <li>Práctica SEO</li>
-         </ul>
-            </aside>
-            <aside id="caja1">
-        <section id="subtitulo">Zayin Sistemas (Programador App Web)</section>
-                <p align="center">21/01/2019 – 29/11/2019 (MARACAY VENEZUELA)</p>
+                     javascript y moldeandolos con Html y Cs</p></section>
+     
+            
+
+
+            <button class="accordion">Zayin Sistemas (Programador App Web)</button>
+        <section id="subtitulo">
+          <font size="4px">21/01/2019 – 29/11/2019 (MARACAY VENEZUELA)</font>
                 <p align="justify" style="margin-right: 30px; padding: 30px;">
                      Desarrollar Aplicaciones Web conforme a las necesidades de los
                      clientes cuyas necesidades correspondian a sistemas antinguos
                      y poco automatizados y que no podian ser modificados, crear
                      nuevos módulos a los sistemas ya creados por la empresa y que
                      evolucionaran al mismo rítmo que cambiaban las leyes
-                     estipuladas por el Gobierno actua.</p>
-      </aside>
+                     estipuladas por el Gobierno actua.</p></section>
+   
       
-      <aside id="caja3">
-          <ul>
-            <li>Eléctronica Básica</li>
-            <li>Operador de Computadoras</li>
-            <li>Analista de Sistemas</li>
-            <li>Mantenimiento de Micros</li>
-            <li>Office 97</li>
-            <li>Macromedia Flash</li>
-            <li>Macromedi Dearmweaver</li> 
-          </ul>
-
-            </aside>
-            <aside id="caja1">
-        <section id="subtitulo">Clinica Guadalupe (Soporte Técnico)</section>
-        <p align="center">07/03/2016 – 19/04/2018 (MARACAY VENEZUELA)</p>
+     
+        <button class="accordion">Clinica Guadalupe (Soporte Técnico)</button>  
+        <section id="subtitulo">
+          <font size="4px"> 07/03/2016 – 19/04/2018 (MARACAY VENEZUELA)</font>
                <p align="justify" style="margin-right: 30px; padding: 30px;">
                      Administración de servidores Windows, Active directory, ingresar
                      equipos al dominio, crear directivas de grupo, configurar equipos
                      en la red routers y modem, Configurar y administrar redes,
                      cableado estructurado, Analisis y deteción de fallas soporte
                      técnico a usuarios y aplicaciones, reparación de computadoras
-                     y equipos computacionales, realizar mantenimientos y backup.</p>
-      </aside>
-      
-      <aside id="caja3">
-           <ul>
-             <li>Adobe Photoshop</li>
-             <li>Adobe Audition</li>
-             <li>Adobe Illustrator</li>
-             <li>Windows Server Small Business 2003</li>
-             <li>Base de Datos Mysql</li>
-           </ul>
+                     y equipos computacionales, realizar mantenimientos y backup.</p></section>
+                     
+    <button class="accordion">Habilidades Adquiridas</button>  
+      <section id="subtitulo">
+     
+        <table>
+          <tr><td><ul><li>Eléctronica Básica </li><li>Operador de Computadoras</li><li>Analista de Sistemas</li><li>Mantenimiento de Micros</li><li>Office 97</li><li>Macromedia Flash</li><li>Macromedi Dearmweaver</li></ul></td> 
+              <td><ul><li>Administración de Servidores</li><li>Redes y Cableado</li><li>Soporte Técnico</li><li>Php (App web)</li><liRedes y Cableado estructurado></li><li>Mysql (base de datos)</li><li>Adobe Illustrator</li><li>JavaScript</li><li>Base de Datos Mysql</li></ul></td>
+              <td><ul><li>Html y Css</li><li>WordPress</li><li>React Native</li><li>Python</li><li>Nodejs (páginas web)</li><li>Práctica SEO</li><li>Adobe Photoshop</li><li>Windows Server Small Business 2003</li></ul</td>
+           </tr>
+        </table>
+ 
+          
+          
+          
+          
+          
+          </p> </font>
+           
             </aside>
    </section>
 
 
      <section class="caja_links">
           <nav class="links">
-               <button class="boton"><a href="index.html">Información Personales</a></button>
-               <button class="boton"><a href="experiencia.html">Experiencia Laboral</a></button>
-               <button class="boton"><a href="referencias.html">Referencias Personales</a></button>
-               <button class="boton"><a href="referfamiliares.html">Referencias Familiares</a></button>
-               <button class="boton"><a href="estudios.html">Estudios realizados</a></button>
+               <button class="boton"><font size="3px"><a href="index.html">Información Personales</a></font></button>
+               <button class="boton"><font size="3px"><a href="experiencia.html">Experiencia Laboral</a></font></button>
+               <button class="boton"><font size="3px"><a href="referencias.html">Referencias Personales</a></font></button>
+               <button class="boton"><font size="3px"><a href="referfamiliares.html">Referencias Familiares</a></font></button>
+               <button class="boton"><font size="3px"><a href="estudios.html">Estudios realizados</a></font></button>
           </nav>
       </section>
   <section class="caja_links">
       <nav class="links">
-        <button class="boton2"><a href="descargas/HV ELKIN SIERRA.pdf" download="HV ELKIN SIERRA.pdf">Descargar Hoja de Vida</a></button>
+       <font size="3px"><button class="boton2"><a href="descargas/HV ELKIN SIERRA.pdf" download="HV ELKIN SIERRA.pdf">Descargar Hoja de Vida</a></font></button>
       </nav>
   </section>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
           
 
 

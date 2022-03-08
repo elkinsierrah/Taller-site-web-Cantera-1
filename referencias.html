@@ -31,8 +31,7 @@ a{
 #contenedor{
   margin:0px 30px 30px 30px;
   color:#000000;
- 
-  height:500px;
+  
   
 }
 
@@ -41,7 +40,7 @@ a{
   color:#fff;
   border:1px solid #000000;
   width: 620px;
-  height:200px;
+  height:250px;
   text-align: center;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -67,8 +66,8 @@ a{
   margin:2px 5px 2px 5px;
   color:#000000;
   border:1px solid #000000;
-  width:620px;
-  height:200px;
+  width:99%;
+  height:250px;
   text-align: center;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -76,20 +75,10 @@ a{
   float: left ;
   border-radius: 15px;
   box-shadow: 8px 10px 10px black;
+ 
 }
 
-#subtitulo{
-  font-size:30px;
-  font-weight:bold; 
-  text-align:center;
-  text-shadow:2px 2px #000;
-  color: #fff;
-  box-shadow: 2px 8px 5px black;
-  margin-bottom:20px;
-  margin-top:10px;
-  padding:0px;
-  background-color:#333333;
-}
+
 
 #subtitulo2{
   font-size:30px;
@@ -102,6 +91,8 @@ a{
   margin-top:10px;
   padding:0px;
   background-color:#0087A0;
+
+  
 }
 
 img#foto{
@@ -112,16 +103,15 @@ p{
 
   font-size:16px;   
   text-indent:40px;
+  margin:5px 70px 5px 70px;
 }
-font {
 
-  text-shadow: 1px 1px 8px;
-}
 .caja_links{
   margin:10px 30px 10px 30px;
   color:#000000;
-  width: 450;
+  width: 95%;
   height: 60px;
+ 
   
 
   }
@@ -134,7 +124,7 @@ font {
 }   
 
 .boton {
-  margin:5px 19px 5px 19px;
+  margin:5px 12px 5px 12px;
   background-color: #333333;
   color: #fff;
   height: 40px;
@@ -175,18 +165,51 @@ h1{
 h4{
   color: #fff;
 }
-ul,ol,dl {
-  font-size: 1.5rem;
+ul{
+  font-size:1.5rem;
 }
+
 li {
   margin:5px 20px 5px 70px;
-  line-height: 1.7;
+  line-height: 1.0;
   text-align: left;
-
+  
 }
 footer{
  height: 300px; 
 background-color:#333333;
+
+}
+#subtitulo{
+  font-size:30px;
+  font-weight:bold; 
+  text-align:center;
+  text-shadow:2px 2px #000;
+  color: #fff;
+  margin-bottom:20px;
+  margin-top:10px;
+  padding:0px;
+  background-color:#333333;
+  max-width: 95%;
+  border-radius: 15px;
+  box-shadow: 8px 10px 10px black;
+   
+  
+}
+button{
+  font-size:30px;
+  font-weight:bold; 
+  text-align:center;
+  text-shadow:2px 2px #000;
+  color: #fff;
+  margin-bottom:0px;
+  margin-top:10px;
+  padding:0px;
+  background-color:#333333;
+  border-radius: 10px;
+  box-shadow: 2px 8px 5px black;
+  width: 95%;
+  height: 50px;
 
 }
 </style>          
@@ -198,60 +221,86 @@ background-color:#333333;
       </header>    
       
 <section id="contenedor">
-    <section id="titulo">Referencias Personales</section>
-      <aside id="caja1">
-        <section id="subtitulo">José Miguel Correa</section>
-        <p align="center"><br>
-                       Profesión: Ingeniero en Sistemas<br> 
-                       Tiempo de referencia: 20 años<br>
-                       Teléfono: +57 319 2143133<br>
-                       Dirección: Guayabal Medellín<br></p>
-      </aside>
-      
-      <aside id="caja3">
-           <section id="subtitulo2">Nastasha Castillo</section>
-           <p align="center"><br>
-                        Profesión: Diseñadora Gráfica<br>
-                        Tiempo de referencia: 15 años<br>
-                        Teléfono: +57 312 7368039<br>
-                        Dirección: Guayabal Medellín<br></p>
-            </aside>
 
-      <aside id="caja1">
-        <section id="subtitulo">Giuseppe Di Ruggiero</section>
-        <p align="center"><br>
-                       Profesión: Mécanico Soldador<br> 
-                       Tiempo de referencia: 5 años<br>
-                       Teléfono: +57 300 6525827<br>
-                       Dirección: Barranquilla Atrantico<br></p>
-      </aside>
+  
+    <section id="titulo">Referencias Personales</section>
+    Haga doble click en los nombres para ocultar o desplegar
+    <button class="accordion">José Miguel Correa</button>
+    <section id="subtitulo">
+         <p style="padding: 5px;">
+               <ul>
+                 <li>Profesión: Ingeniero en Sistemas</li>
+                 <li>Tiempo de referencia: 20 años</li>
+                 <li>Teléfono: +57 319 2143133</li>
+                 <li>Dirección: Guayabal Medellín</li>
+                </ul><br></section>
+
+
+  <button class="accordion">Nastasha Castillo</button>
+    <section id="subtitulo">
+         <p style="padding: 5px;">
+               <ul>
+                 <li>Profesión: Diseñadora Gráfica</li>
+                 <li>Tiempo de referencia: 15 años</li>
+                 <li>Teléfono: +57 312 736803</li>
+                 <li>Dirección: Guayabal Medellín</li>
+                </ul><br></section>
+
+
+<button class="accordion">Giuseppe Di Ruggiero</button>
+    <section id="subtitulo">
+         <p style="padding: 5px;">
+               <ul>
+                 <li>Profesión: Mécanico Soldador</li>
+                 <li>Tiempo de referencia: 5 años</li>
+                 <li>Teléfono: +57 300 6525827</li>
+                 <li>Dirección: Barranquilla Atrantico</li>
+                </ul><br></section>
       
-      <aside id="caja3">
-           <section id="subtitulo2">Carolina Cruz</section>
-           <p align="center"><br>
-                        Profesión: Abiogada<br>
-                        Tiempo de referencia: 3 años<br>
-                        Teléfono: +57 321 4979056<br>
-                        Dirección: Bogota DC<br></p>
-            </aside>
+<button class="accordion">Carolina Cruz</button>
+    <section id="subtitulo">
+         <p style="padding: 5px;">
+               <ul>
+                 <li>Profesión: Abogada</li>
+                 <li>Tiempo de referencia: 3 años</li>
+                 <li>Teléfono: +57 321 4979056</li>
+                 <li>Dirección: Bogota DC</li>
+                </ul><br></section>
+  
    </section>
 
 
-     <section class="caja_links">
-          <nav class="links">
-               <button class="boton"><a href="index.html">Información Personales</a></button>
-               <button class="boton"><a href="experiencia.html">Experiencia Laboral</a></button>
-               <button class="boton"><a href="referencias.html">Referencias Personales</a></button>
-               <button class="boton"><a href="referfamiliares.html">Referencias Familiares</a></button>
-               <button class="boton"><a href="estudios.html">Estudios realizados</a></button>
-          </nav>
-      </section>
-  <section class="caja_links">
-      <nav class="links">
-        <button class="boton2"><a href="descargas/HV ELKIN SIERRA.pdf" download="HV ELKIN SIERRA.pdf">Descargar Hoja de Vida</a></button>
-      </nav>
-  </section>
-
+   <section class="caja_links">
+    <nav class="links">
+         <button class="boton"><font size="3px"><a href="index.html">Información Personales</a></font></button>
+         <button class="boton"><font size="3px"><a href="experiencia.html">Experiencia Laboral</a></font></button>
+         <button class="boton"><font size="3px"><a href="referencias.html">Referencias Personales</a></font></button>
+         <button class="boton"><font size="3px"><a href="referfamiliares.html">Referencias Familiares</a></font></button>
+         <button class="boton"><font size="3px"><a href="estudios.html">Estudios realizados</a></font></button>
+    </nav>
+</section>
+<section class="caja_links">
+<nav class="links">
+ <font size="3px"><button class="boton2"><a href="descargas/HV ELKIN SIERRA.pdf" download="HV ELKIN SIERRA.pdf">Descargar Hoja de Vida</a></font></button>
+</nav>
+</section>
+ 
+ <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
           
 
 
